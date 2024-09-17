@@ -1,0 +1,209 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+<!--LINKS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+<!--UI-->
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Exo 2', sans-serif;
+            overflow-y: scroll;
+            font-size:  25px;
+        }
+        #icon{
+            background-color: #04AA6D;
+            width: 15%;
+            font-size: 20px;
+            color:white;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Protest Strike', sans-serif;
+            border-radius: 10px;
+            padding: 10px;
+            top: 15px;
+            position:absolute;
+
+        }
+        #searchbox{
+        font-size: 15px;
+        float: right;
+        
+        }
+        
+        #usermenu{
+            background-color:  rgba(143, 199, 158,0.5);
+            display: inline-block;
+            position:relative;
+            vertical-align: middle;
+            width: 10%;
+            height: 570px;
+            border-radius: 5px;
+        }
+
+        button{
+            background-color: #04AA6D;
+            color:white;
+            margin: 10%;
+            border-radius: 10px;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;    
+        }
+
+        /*dropdown menus*/
+        .usermenu-content {
+        display: none;
+        position: absolute;
+        font-size: 15px;
+        background-color: #f1f1f1;
+        width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1; 
+        }
+
+        .usermenu-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+        .usermenu-content a:hover {background-color: #ddd;}
+        .usermenu:hover .usermenu-content {display: block;}
+        .usermenu:hover .dropbtn {background-color: #3e8e41;}
+
+        table.center {
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        
+        #side-menu{
+            background-color: rgb(88, 88, 88);
+            width:250px;
+            height: 760px;
+            border-radius: 10px;
+            line-height: 1.5;
+            padding: 10px;
+            
+        }
+        #main-forum{
+            background-color: grey;
+            width:100%;
+            height: 800px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <table style = "width:100%;float:right;background-color: black; vertical-align: middle;">
+        <tr>
+            <th>
+                <a id = "icon" href = "Hackathon.html">ED SPARK</a>
+            </th>
+            <th>
+                <div id = "searchbox">
+                    <label for "esearch">Find what you're looking for</label>
+                    <input type = "search" id = "esearch">
+                        <input type = "submit" id = "Submit"></input>
+                </div>
+            </th>
+            <th style >
+                <div class="usermenu">
+                    <button class="dropbtn">User</button>
+                    <div class="usermenu-content">
+                        <a onclick="authorizeGoogleDrive()">Google Drive log in</a>
+                        <a href="Upload Demo.html">Share - ED</a>
+                    </div>
+                </div>
+            </th>
+            
+        </tr>
+    </table>
+
+
+    <table style = "width:100%;float:right; vertical-align: middle;">
+        <tr>
+            <th style = "width: 20%">
+                <div id = "side-menu">
+                    <p>
+                        Find Questions
+                    </p>
+                    <p>
+                        Post Questions
+                    </p>
+                    <p>
+                        ...
+                    </p>
+                </div>
+            </th>
+            <th style = "width: 85%">
+                <div id = "main-forum">
+                    <table style = "width:95%;
+                    height:760px; 
+                    position:relative;
+                    top:20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    color:black;
+                    text-align: left;
+                    text-indent: 5%;
+                    margin-left: auto; 
+                    margin-right: auto;">
+                        <tr style = "height: 10%; background-color: rgb(253, 245, 234); border-radius: 5px;">
+                            <th style = "width:25%">
+                                Posted by Jack:
+                            </th>
+                            <th style = "width:75%">
+                                Steps to learn HTML & CSS: Where should I start?
+                            </th>
+                            </th>
+                        </tr>
+                        <tr style = "height: 10%; background-color: rgb(253, 245, 234); border-radius: 5px;">
+                            <th style = "width:25%">
+                                Posted by Tom:
+                            </th>
+                            <th style = "width:75%">
+                                How should I do estimation of errors with alternative series?
+                            </th>
+                        </tr>
+                        <tr style = "vertical-align: bottom;">
+                            <th style = "width:25%; font-size: 20px;">
+                                Welcome to the Forum.
+                            </th>
+                            <th style = "width:75%; font-size: 20px;">
+                                Ask a Question Here.
+                            </th>
+                        </tr>
+                        
+                    </table>
+
+
+
+
+                </div>
+            </th>
+        </tr>
+    </table>
+
+
+
+
+
+
+</body>
+
+</html>

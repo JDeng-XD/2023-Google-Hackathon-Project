@@ -1,0 +1,255 @@
+<body>
+<!--LINKS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+<!--UI-->
+<style>
+    #Header{
+        background-color: #cbfee2;
+        width:100%;
+        overflow-y: scroll;
+        padding: 10px;
+        font-family: 'Exo 2', sans-serif;
+    }
+    body{
+        background-color: white;
+        font-size: 17px;
+        font-family: 'Protest Strike', sans-serif;
+    }
+
+    #title{
+        font-size: 60px;
+        text-align: center;
+        margin: 0%;
+    }
+    #instruction{
+        font-size: 20px;
+        text-align: center;
+        margin: 0%;
+    }
+    #searchbox{
+        font-size: 15px;
+        float: right;
+        
+    }
+    #usermenu{
+        background-color:  rgba(143, 199, 158,0.5);
+        display: inline-block;
+        position:relative;
+        vertical-align: middle;
+        width: 20%;
+        height: 570px;
+        border-radius: 5px;
+    }
+
+    /*dropdown menus*/
+    .usermenu-content {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    }
+
+    .usermenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .usermenu-content a:hover {background-color: #ddd;}
+    .usermenu:hover .usermenu-content {display: block;}
+    .usermenu:hover .dropbtn {background-color: #3e8e41;}
+
+
+    /*dropdown Share-EDMenus*/
+    .textmenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    left: 45%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    }
+
+    .textmenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .textmenu-content a:hover {background-color: #ddd;}
+    .textmenu:hover .textmenu-content {display: block;}
+    .textmenu:hover .dropbtn {background-color: #3e8e41;}
+
+    /*dropdown Share-EDMenus*/
+    .grademenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    left: 45%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    }
+
+    .grademenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .grademenu-content a:hover {background-color: #ddd;}
+    .grademenu:hover .grademenu-content {display: block;}
+    .grademenu:hover .dropbtn {background-color: #3e8e41;}
+
+    /*dropdown Share-EDMenus*/
+    button{
+        background-color: #04AA6D;
+        color:white;
+        padding: 15px 22px;
+        border:none;
+        margin:15px;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;    
+    }
+    #ADS{
+        background-color: rgb(230, 230, 230);
+        position: relative;
+        text-align: center;
+        height:150px;
+        top:130px;
+        font-size: 20px;
+    }
+    #MajorMenu{
+        height: 1000px;
+        position: relative;
+        text-align: center;
+        top:100px;
+        font-size: 20px;
+    }
+    #searchbox{
+        font-size: 20px;
+        float: left;
+    }
+    #esearch{
+        border-radius: 15px;
+        width: 100px;
+        vertical-align: middle;
+        height: 38px;
+    }
+    #Submit{
+        border-radius: 15px;
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+        vertical-align: middle;
+        background-color: white;
+    }
+</style>
+
+    <div id = "Header">
+    <p id = "title">ED SPARK</p>
+    <p id = "instruction">Share,Spark,Innovate,Educate</p>
+    </div>
+    <div>
+    <table style = "width:100%;float:right;background-color: #f1f1f1;">
+        <tr>
+            <th>
+                <div id = "searchbox">
+                    <label for "esearch">Find what you're looking for</label>
+                    <input type = "search" id = "esearch">
+                        <input type = "submit" id = "Submit"></input>
+                </div>
+            </th>
+            <th style >
+                <div class="usermenu">
+                    <button class="dropbtn">User</button>
+                    <div class="usermenu-content">
+                        <a onclick="authorizeGoogleDrive()">Google Drive log in</a>
+                        <a href="Upload Platform.html">Share - ED</a>
+                        <a href="Questions Forum.html">Questions Forum</a>
+                    </div>
+                </div>
+            </th>
+            
+        </tr>
+    </table>
+    </div>
+
+    <div id = "MajorMenu">
+            <div class="textmenu">
+                <button class="dropbtn">TEXTBOOKS</button>
+                <div class="textmenu-content">
+                    <a href="FileViewer.html">English</a>
+                    <a href="FileViewer.html">Math</a>
+                    <a href="FileViewer.html">Physics</a>
+                    <a href="FileViewer.html">Chemistry</a>
+                    <a href="FileViewer.html">History</a>
+                </div>
+            </div>
+
+            <div class="grademenu">
+                <button class="dropbtn">Grades</button>
+                <div class="grademenu-content">
+                    <a href="FileViewer.html">Pre-Elementary</a>
+                    <a href="FileViewer.html">Elementary</a>
+                    <a href="FileViewer.html">High-School</a>
+                    <a href="FileViewer.html">University</a>
+                </div>
+            </div>
+            
+            <button id = "share"> Share your intelligence:</button>
+        
+    </div>
+    <div id = "ADS">
+        Support our Development:
+    </div>
+
+    <script>
+        // Replace with your actual client ID and redirect URI
+        const clientId = 'hopeful-canto-413306';
+        const redirectUri = 'YOUR_REDIRECT_URI';
+
+        // Google Drive API scopes
+        const scopes = 'https://www.googleapis.com/auth/drive.file';
+
+        // Function to initiate Google Drive API authentication
+        function authorizeGoogleDrive() {
+            const authUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes}&response_type=code`;
+
+            // Open a new window for user authentication
+            window.open(authUrl, '_blank');
+        }
+
+        // Function to handle the redirect from Google after user authentication
+        function handleAuthRedirect() {
+            // Extract the authorization code from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const authCode = urlParams.get('code');
+
+            if (authCode) {
+            // Send the authorization code to your server to exchange for tokens
+            console.log('Authorization code:', authCode);
+            } else {
+            console.error('Authorization code not found.');
+            }
+        }
+
+        // Call the function to handle the redirect when the page loads
+        handleAuthRedirect();
+    </script>
+
+<body>
