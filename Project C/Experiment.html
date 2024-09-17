@@ -1,0 +1,13 @@
+<html>
+  <body onload = "draw()">    
+    <canvas id="cvs" height="600px" width="1000px" style="border:1px solid black"></canvas>
+  </body>
+<script>
+var cvs = document.getElementById("cvs");
+var ctx = cvs.getContext("2d");
+function draw(){
+  ctx.fillStyle = "black"
+  ctx.fillRect(100,100,200,200)
+}
+</script>
+</html>
